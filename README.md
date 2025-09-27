@@ -247,16 +247,8 @@ interface QuizState {
 - Progress bar animations
 - Hover effects on interactive elements
 
-### Future Bonus Features (Roadmap):
+### Bonus Features:
 - **Dark/Light Mode Toggle**: Theme switching capability
-- **Sound Effects**: Audio feedback for correct/incorrect answers
-- **Timer Mode**: Time-limited quiz challenges
-- **Streaks**: Consecutive correct answer tracking
-- **Achievements**: Badge system for milestones
-- **Export Results**: PDF/image sharing of quiz results
-- **Multi-language Support**: Internationalization ready
-- **Voice Questions**: Text-to-speech for accessibility
-
 ---
 
 ## Quick Start Commands
