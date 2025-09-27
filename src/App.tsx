@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import { QuizProvider, QuizContext } from './context/QuizContext';
 import TopicSelection from './components/TopicSelection';

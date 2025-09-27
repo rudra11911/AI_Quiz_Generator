@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Sun, Moon } from 'lucide-react';
 import { ThemeContext } from '../context/ThemeContext';
 import { getThemeStyles } from '../styles/themeStyles';

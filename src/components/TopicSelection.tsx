@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { Heart, TrendingUp, Brain, Wallet, Briefcase, Leaf, Megaphone, Activity, Shield, Users } from 'lucide-react';
 import { QuizContext } from '../context/QuizContext';
 import { ThemeContext } from '../context/ThemeContext';
@@ -19,18 +19,6 @@ const topicDescriptions: Record<string, string> = {
   'Leadership & Teamwork': 'Developing skills to lead and collaborate effectively'
 };
 
-// truncated topicContents for brevity, keep as you had it...
-const topicContents: Record<string, string> = {
-  Wellness: `Making money in the stock market...`,
-  'Tech Trends': `The technology landscape is rapidly evolving...`,
-  'Personal Finance': `Managing your personal finances is the foundation...`,
-  Entrepreneurship: `Entrepreneurship involves identifying opportunities...`,
-  'Sustainable Living': `Living sustainably means adopting practices...`,
-  'Digital Marketing': `Digital marketing is the art of promoting products...`,
-  'Health & Fitness': `A healthy lifestyle enhances both physical and mental...`,
-  'Cybersecurity Awareness': `Cybersecurity awareness introduces concepts like...`,
-  'Leadership & Teamwork': `Leadership and teamwork emphasize communication...`
-};
 
 const TopicSelection = () => {
   const { state, setState } = useContext(QuizContext);

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { CheckCircle, XCircle } from 'lucide-react';
 import { QuizContext } from '../context/QuizContext';
 import { ThemeContext } from '../context/ThemeContext';

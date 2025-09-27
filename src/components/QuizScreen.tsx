@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { QuizContext } from '../context/QuizContext';
 import { ThemeContext } from '../context/ThemeContext';
