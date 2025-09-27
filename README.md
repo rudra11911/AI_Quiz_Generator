@@ -45,7 +45,7 @@ npm run dev
 ### Demo
 - **Local**: Available at `http://localhost:5173` after setup
 - **Production Build**: `npm run build && npm run preview`
-- **Hosted Demo**: `https://ai-quiz-generator-rho.vercel.app/`
+- **Hosted Demo**: [Would be deployed to Vercel/Netlify with environment variables configured]
 
 ## 2. Problem Understanding
 
@@ -160,8 +160,11 @@ src/
 ```typescript
 interface ThemeState {
   isDarkMode: boolean;
+  currentLayout: 'compact' | 'comfortable' | 'spacious';
   toggleTheme: () => void;
+  toggleLayout: () => void;
   themeStyles: ThemeStyles;
+  layoutStyles: LayoutStyles;
 }
 ```
 
@@ -194,6 +197,13 @@ export const themeStyles = {
     textSecondary: '#a0aec0'
   }
 };
+
+// Layout configurations for different display modes
+export const layoutStyles = {
+  compact: { /* Compact layout styles */ },
+  comfortable: { /* Comfortable layout styles */ },
+  spacious: { /* Spacious layout styles */ }
+};
 ```
 
 **Enhanced State Management:**
@@ -214,8 +224,11 @@ interface QuizState {
 // ThemeContext State
 interface ThemeContextType {
   isDarkMode: boolean;
+  currentLayout: 'compact' | 'comfortable' | 'spacious';
   toggleTheme: () => void;
+  toggleLayout: () => void;
   themeStyles: typeof themeStyles.light | typeof themeStyles.dark;
+  layoutStyles: typeof layoutStyles.compact | typeof layoutStyles.comfortable | typeof layoutStyles.spacious;
 }
 ```
 
@@ -309,6 +322,7 @@ interface ThemeContextType {
 - **Current Knowledge**: AI can incorporate up-to-date information
 - **Natural Language**: More engaging and conversational content
 - **Contextual Feedback**: Specific insights based on actual performance
+- **Adaptive UI**: Theme and layout preferences persist across sessions
 
 ---
 
