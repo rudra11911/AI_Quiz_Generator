@@ -45,8 +45,7 @@ npm run dev
 ### Demo
 - **Local**: Available at `http://localhost:5173` after setup
 - **Production Build**: `npm run build && npm run preview`
-- **Hosted Demo**: [Would be deployed to Vercel/Netlify with environment variables configured]
-
+- **Hosted Demo**: `https://ai-quiz-generator-rho.vercel.app/`
 ## 2. Problem Understanding
 
 ### Core Requirements Understood:
